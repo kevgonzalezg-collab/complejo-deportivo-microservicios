@@ -45,4 +45,16 @@ public class ClienteBloqueadoService {
                 .map(c -> new ClienteBloqueadoResponseDTO(c.getId(), c.getRut(), c.getNombre(), c.getMotivo(), c.getFechaBloqueo()))
                 .toList();
     }
+
+    //METODO AGREGADO: Para que el controlador pueda verificar los bloqueos por RUT
+    public Optional<ClienteBloqueadoResponseDTO> obtenerPorRut(String rut) {
+        return repository.findByRut(rut)
+                .map(c -> new ClienteBloqueadoResponseDTO(
+                        c.getId(),
+                        c.getRut(),
+                        c.getNombre(),
+                        c.getMotivo(),
+                        c.getFechaBloqueo()
+                ));
+    }
 }

@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/listanegra")
@@ -25,7 +26,6 @@ public class ClienteBloqueadoController {
             ClienteBloqueadoResponseDTO response = service.bloquear(dto);
             return ResponseEntity.status(HttpStatus.CREATED).body(response);
         } catch (RuntimeException e) {
-            // Si el RUT ya existe, devolvemos un error amigable
             return ResponseEntity.badRequest().body(e.getMessage());
         }
     }
@@ -33,5 +33,26 @@ public class ClienteBloqueadoController {
     @GetMapping
     public ResponseEntity<List<ClienteBloqueadoResponseDTO>> listarTodos() {
         return ResponseEntity.ok(service.listarTodos());
+    }
+
+    // 🛡️ NUEVO ENDPOINT: Recibe el RUT dinámicamente y soluciona el 404
+    @GetMapping("/{rut}")
+    public ResponseEntity<?> obtenerPorRut(@PathVariable String rut) {
+        Optional<ClienteBloqueadoResponseDTO> cliente = service.obtenerPorRut(rut);
+
+        if (cliente.isPresent()) {
+            // Mandamos bloqueado en true para que calce con tu ListaNegraEspejoDTO
+            return ResponseEntity.ok(java.util.Map.of(
+                    "bloqueado", true,
+                    "mensaje", "Acceso denegado: El cliente se encuentra en la lista negra.",
+                    "datos", cliente.get()
+            ));
+        }
+
+        // Si el Optional viene vacío, el usuario puede pasar libre
+        return ResponseEntity.ok(java.util.Map.of(
+                "bloqueado", false,
+                "mensaje", "Cliente limpio. Permitido reservar."
+        ));
     }
 }
