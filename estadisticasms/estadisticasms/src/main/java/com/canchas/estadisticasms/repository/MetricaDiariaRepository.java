@@ -10,6 +10,6 @@ import java.util.Optional;
 @Repository
 public interface MetricaDiariaRepository extends JpaRepository<MetricaDiaria, Long> {
 
-    // Spring construirá la consulta para buscar las métricas exactas de una fecha
+
     Optional<MetricaDiaria> findByFecha(LocalDate fecha);
 }
