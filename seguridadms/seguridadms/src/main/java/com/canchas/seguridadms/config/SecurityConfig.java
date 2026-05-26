@@ -1,0 +1,31 @@
+package com.canchas.seguridadms.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+
+    // 1. Configuramos el encriptador de contraseñas
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    // 2. Apagamos el bloqueo por defecto para poder usar Postman
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http
+                .csrf(csrf -> csrf.disable()) // Desactivamos CSRF (protección de formularios web) para usar APIs
+                .authorizeHttpRequests(auth -> auth
+                        .anyRequest().permitAll() // Dejamos todo público por el momento para probar la conexión
+                );
+        return http.build();
+    }
+}
