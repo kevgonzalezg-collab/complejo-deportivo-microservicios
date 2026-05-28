@@ -3,8 +3,7 @@ package com.canchas.estadisticasms.controller;
 import com.canchas.estadisticasms.dto.MetricaRequestDTO;
 import com.canchas.estadisticasms.dto.MetricaResponseDTO;
 import com.canchas.estadisticasms.service.MetricaDiariaService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
