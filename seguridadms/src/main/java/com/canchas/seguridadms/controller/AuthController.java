@@ -30,23 +30,31 @@ public class AuthController {
     @PostMapping("/login")
     public ResponseEntity<AuthResponseDTO> login(@RequestBody LoginRequestDTO dto) {
         try {
-            return ResponseEntity.ok(service.login(dto)); // 👈 Corregido el flujo normal
-        } catch (RuntimeException e) { // 👈 Declarada la variable 'e' correctamente
+            return ResponseEntity.ok(service.login(dto));
+        } catch (RuntimeException e) {
             return ResponseEntity.status(401).body(new AuthResponseDTO(e.getMessage(), null));
         }
     }
 
-    // 🔥 EL ENDPOINT TOTALMENTE ACTUALIZADO Y FLEXIBLE
+    @GetMapping("/listar")
+    public ResponseEntity<?> listarTodos() {
+        try {
+
+            return ResponseEntity.ok(service.listarTodasCredenciales());
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(500).body(Map.of("error", e.getMessage()));
+        }
+    }
     @PostMapping("/validar")
     public ResponseEntity<?> validarToken(@RequestHeader("Authorization") String token) {
 
-        // 1. Limpiamos el prefijo "Bearer " que Postman añade automáticamente
+
         String tokenLimpio = token;
         if (token != null && token.startsWith("Bearer ")) {
             tokenLimpio = token.substring(7);
         }
 
-        // 2. Comparamos el token limpio o el alternativo "1234"
+
         if (tokenLimpio != null && (tokenLimpio.equals("token-simulado-por-ahora") || tokenLimpio.equals("1234"))) {
             return ResponseEntity.ok(Map.of(
                     "valido", true,
@@ -55,7 +63,7 @@ public class AuthController {
             ));
         }
 
-        // Si no coincide, arroja el 401 controlado
+
         return ResponseEntity.status(401).body(Map.of("valido", false));
     }
 }

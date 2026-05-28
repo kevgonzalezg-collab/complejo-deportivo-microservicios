@@ -12,13 +12,13 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    // 1. Configuramos el encriptador de contraseñas
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    // 2. Apagamos el bloqueo por defecto para poder usar Postman
+
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http

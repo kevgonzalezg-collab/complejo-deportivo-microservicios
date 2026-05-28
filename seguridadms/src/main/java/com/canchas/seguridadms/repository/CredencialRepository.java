@@ -9,7 +9,7 @@ import java.util.Optional;
 @Repository
 public interface CredencialRepository extends JpaRepository<Credencial, Long> {
 
-    // Spring Boot construirá automáticamente la consulta SQL (SELECT * FROM credencial WHERE email = ?)
+
     Optional<Credencial> findByEmail(String email);
 
 }
