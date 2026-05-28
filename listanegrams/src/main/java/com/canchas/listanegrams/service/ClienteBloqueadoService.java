@@ -46,7 +46,7 @@ public class ClienteBloqueadoService {
                 .toList();
     }
 
-    //METODO AGREGADO: Para que el controlador pueda verificar los bloqueos por RUT
+
     public Optional<ClienteBloqueadoResponseDTO> obtenerPorRut(String rut) {
         return repository.findByRut(rut)
                 .map(c -> new ClienteBloqueadoResponseDTO(
