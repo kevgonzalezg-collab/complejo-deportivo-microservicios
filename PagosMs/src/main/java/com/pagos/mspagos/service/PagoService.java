@@ -8,95 +8,111 @@ import com.pagos.mspagos.dto.MetricaEspejoDTO;
 import com.pagos.mspagos.entity.Pago;
 import com.pagos.mspagos.exception.PagoException;
 import com.pagos.mspagos.repository.PagoRepository;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class PagoService {
 
-    @Autowired
-    private PagoRepository repository;
+    private final PagoRepository repository;
+    private final WebClient reservasWebClient;
+    private final WebClient notificacionesWebClient;
+    private final WebClient estadisticasWebClient;
 
-    @Value("${servicio.reservas.url}")
-    private String reservasUrl;
 
-    private final RestTemplate restTemplate = new RestTemplate();
+    public PagoService(PagoRepository repository,
+                       WebClient reservasWebClient,
+                       WebClient notificacionesWebClient,
+                       WebClient estadisticasWebClient) {
+        this.repository = repository;
+        this.reservasWebClient = reservasWebClient;
+        this.notificacionesWebClient = notificacionesWebClient;
+        this.estadisticasWebClient = estadisticasWebClient;
+    }
+
+
+
+
+    public List<PagoResponseDTO> listarTodosLosPagos() {
+        return repository.findAll().stream()
+                .map(pago -> new PagoResponseDTO(
+                        pago.getId(),
+                        pago.getReservaId(),
+                        pago.getMonto(),
+                        pago.getEstadoPago()
+                ))
+                .collect(Collectors.toList());
+    }
+
+
+    //   PROCESAR EL PAGO
 
     public PagoResponseDTO procesarPago(PagoRequestDTO request) {
 
-        Long usuarioIdDeLaReserva = null;
         ReservaEspejoDTO reserva = null;
 
+        //  VERIFICAR  LA RESERVA
         try {
+            System.out.println(" [PAGOS] Consultando existencia de la reserva ID: " + request.getReservaId());
 
-            String urlCompleta = reservasUrl + "/" + request.getReservaId();
+            reserva = reservasWebClient.get()
+                    .uri("/{id}", request.getReservaId())
+                    .retrieve()
+                    .bodyToMono(ReservaEspejoDTO.class)
+                    .block();
 
-            System.out.println("URL CONSULTADA: " + urlCompleta);
-
-            reserva = restTemplate.getForObject(urlCompleta, ReservaEspejoDTO.class);
-
-            System.out.println("RESERVA ENCONTRADA: " + reserva);
-
-            if (reserva != null) {
-                usuarioIdDeLaReserva = reserva.getUsuarioId();
-            }
+            System.out.println(" [PAGOS] Reserva encontrada en el orquestador: " + reserva);
 
         } catch (Exception e) {
-
             e.printStackTrace();
-
-            throw new PagoException(
-                    "ERROR REAL: " + e.getMessage()
-            );
+            throw new PagoException("ERROR REAL AL CONSULTAR RESERVA: " + e.getMessage());
         }
 
-        Pago pago = new Pago();
+        //  procedemos a persistir el pago en MariaDB
+        Pago p = new Pago();
+        p.setReservaId(request.getReservaId());
+        p.setMonto(request.getMonto());
+        p.setMetodoPago(request.getMetodoPago());
+        p.setEstadoPago("APROBADO");
 
-        pago.setReservaId(request.getReservaId());
-        pago.setMonto(request.getMonto());
-        pago.setMetodoPago(request.getMetodoPago());
+        Pago guardado = repository.save(p);
 
-        pago.setEstadoPago("APROBADO");
-
-        Pago guardado = repository.save(pago);
-
-
-        //  NOTIFICACIONES
-        // =====================================================================
+        // COMPROBANTE A NOTIFICACIONES
         try {
             NotificacionesEspejoDTO aviso = new NotificacionesEspejoDTO();
-
-
             aviso.setCorreoDestino("kevis.test@gmail.com");
             aviso.setAsunto(" ¡Tu Pago ha sido Aprobado!");
             aviso.setMensaje("¡Pago aprobado con éxito! Tu reserva #" + guardado.getReservaId() + " por un monto de $" + guardado.getMonto() + " ya está confirmada. ¡A jugar!");
 
-            String urlNotificaciones = "http://localhost:8085/api/notificaciones";
+            notificacionesWebClient.post()
+                    .bodyValue(aviso)
+                    .retrieve()
+                    .bodyToMono(Object.class)
+                    .block();
 
-            restTemplate.postForObject(urlNotificaciones, aviso, Object.class);
             System.out.println(" [PAGOS] ¡Comprobante de pago enviado con éxito a Notificaciones!");
         } catch (Exception e) {
-            System.out.println("[PAGOS] No se pudo notificar el pago: " + e.getMessage());
+            System.out.println(" [PAGOS] No se pudo notificar el pago: " + e.getMessage());
         }
-        // =====================================================================
-        //  2. ACTUALIZAR EL ESTADO EN EL MS-RESERVAS
-        // =====================================================================
+
+        // ACTUALIZAR EL ESTADO EN MS-RESERVAS
         try {
             if (reserva != null) {
-                String urlActualizarReserva = reservasUrl + "/" + guardado.getReservaId() + "/estado?nuevoEstado=PAGADO";
-                restTemplate.put(urlActualizarReserva, null);
+                reservasWebClient.put()
+                        .uri("/{id}/estado?nuevoEstado=PAGADO", guardado.getReservaId())
+                        .retrieve()
+                        .bodyToMono(Void.class)
+                        .block();
+
                 System.out.println(" [PAGOS] ¡Estado de la reserva #" + guardado.getReservaId() + " actualizado a PAGADO en ms-reservas!");
             }
         } catch (Exception e) {
             System.out.println(" [PAGOS] No se pudo actualizar el estado en Reservas: " + e.getMessage());
         }
 
-
-        //  ESTADÍSTICAS (Puerto 8095)
-        // =====================================================================
+        // ACTUALIZAR LAS ESTADÍSTICAS
         try {
             MetricaEspejoDTO metrica = new MetricaEspejoDTO();
             metrica.setFecha(java.time.LocalDate.now());
@@ -105,14 +121,16 @@ public class PagoService {
             metrica.setTotalReservasCanceladas(0);
             metrica.setRecaudacionTotal(guardado.getMonto());
 
-            String urlEstadisticas = "http://localhost:8095/api/estadisticas";
-            restTemplate.postForObject(urlEstadisticas, metrica, Object.class);
+            estadisticasWebClient.post()
+                    .bodyValue(metrica)
+                    .retrieve()
+                    .bodyToMono(Object.class)
+                    .block();
 
             System.out.println(" [PAGOS] ¡Métrica de recaudación enviada con éxito al puerto 8095 por $" + guardado.getMonto() + "!");
         } catch (Exception e) {
             System.out.println(" [PAGOS] No se pudo actualizar el módulo de estadísticas: " + e.getMessage());
         }
-        // =====================================================================
 
         return new PagoResponseDTO(
                 guardado.getId(),
@@ -121,4 +139,20 @@ public class PagoService {
                 guardado.getEstadoPago()
         );
     }
+
+
+
+
+    public PagoResponseDTO obtenerPagoPorId(Long id) {
+        Pago pago = repository.findById(id)
+                .orElseThrow(() -> new PagoException("No se encontró el pago con el ID: " + id));
+
+        return new PagoResponseDTO(
+                pago.getId(),
+                pago.getReservaId(),
+                pago.getMonto(),
+                pago.getEstadoPago()
+        );
+    }
+
 }

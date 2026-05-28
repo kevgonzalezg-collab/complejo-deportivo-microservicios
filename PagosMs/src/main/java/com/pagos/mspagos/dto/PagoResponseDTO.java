@@ -6,10 +6,10 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor // <-- Esto es obligatorio para que el "new" del Service funcione
+@AllArgsConstructor
 public class PagoResponseDTO {
     private Long id;
     private Long reservaId;
     private Double monto;
-    private String estadoPago; // O estado, pero que coincida con lo que manda el constructor
+    private String estadoPago;
 }
