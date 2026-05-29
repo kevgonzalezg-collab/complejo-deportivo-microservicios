@@ -11,6 +11,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UsuarioRequestDTO {
 
+    @NotBlank(message = "El RUT es obligatorio")
+    private String rut;
+
     @Email
     @NotBlank
     private String email;
@@ -22,7 +25,7 @@ public class UsuarioRequestDTO {
     private String nombre;
 
     @NotBlank
-    private String apellido; // 📢 Agregado para hacer match con la BD
+    private String apellido;
 
     @NotBlank
     private String rol;
