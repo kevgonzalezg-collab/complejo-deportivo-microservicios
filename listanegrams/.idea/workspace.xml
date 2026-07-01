@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6cfb75dc-f1d3-448c-a917-e309e4c79ff1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.idea/CanchasMs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/MsHorarioApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/config/WebClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/controller/CanchasController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/dto/CanchaRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/dto/CanchaResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/dto/EstadisticasEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/dto/MetricaEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/entity/Canchas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/exception/CanchaException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/exception/ErrorDetalles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/repository/CanchaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/java/com/canchas/mscanchas/service/CanchaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/resources/db/migration/V1__crear_tabla_canchas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/main/resources/db/migration/V2__insertar_canchas_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/src/test/java/com/canchas/mscanchas/MsCanchasApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/MsHorarioApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/config/WebClientConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/controller/CanchasController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/dto/CanchaRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/dto/CanchaResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/dto/EstadisticasEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/dto/MetricaEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/entity/Canchas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/exception/CanchaException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/exception/ErrorDetalles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/repository/CanchaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/com/canchas/mscanchas/service/CanchaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/db/migration/V1__crear_tabla_canchas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CanchasMs/target/classes/db/migration/V2__insertar_canchas_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/MsPagosApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/config/WebClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/controller/PagoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/dto/MetricaEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/dto/NotificacionesEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/dto/PagoRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/dto/PagoResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/dto/ReservaEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/entity/Pago.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/exception/ErrorDetalles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/exception/PagoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/repository/PagoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/java/com/pagos/mspagos/service/PagoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/resources/db/migration/V1__crear_tabla_pagos.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/main/resources/db/migration/V2__insertar_pagos_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/src/test/java/com/pagos/mspagos/MsPagosApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/MsPagosApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/config/WebClientConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/controller/PagoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/dto/MetricaEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/dto/NotificacionesEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/dto/PagoRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/dto/PagoResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/dto/ReservaEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/entity/Pago.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/exception/ErrorDetalles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/exception/PagoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/repository/PagoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/com/pagos/mspagos/service/PagoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/db/migration/V1__crear_tabla_pagos.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PagosMs/target/classes/db/migration/V2__insertar_pagos_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/CanchaEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/ListaNegraEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/MetricaEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/NotificacionesEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/ReservaRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/ReservaResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/SeguridadEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/DTO/UsuarioEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/MsReservasApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/config/WebClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/controller/ReservasController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/entity/Reservas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/exception/ErrorDetalles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/exception/ReservaException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/repository/ReservaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/java/com/reservas/msreservas/services/ReservasService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/resources/db/migration/V1__crear_tabla_reservas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/main/resources/db/migration/V2__insertar_reservas.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReservasMs/src/test/java/com/reservas/msreservas/MsReservasApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/SeguridadMs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SeguridadMs/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/UsuariosMS/src/test/java/com/usuarios/msusuarios/MsUsuariosApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/MsUsuariosApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/config/WebClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/controller/UsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/dto/MetricaEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/dto/NotificacionesEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/dto/UsuarioRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/dto/UsuarioResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/entity/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/exception/ErrorDetalles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/exception/UsuarioException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/repository/UsuarioRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/java/com/usuarios/msusuarios/service/UsuarioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/resources/db/migration/V1__crear_tabla_usuarios.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/main/resources/db/migration/V2__insertar_usuarios_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/src/test/java/com/usuarios/msusuarios/MsUsuariosApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/MsUsuariosApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/config/WebClientConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/controller/UsuarioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/dto/MetricaEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/dto/NotificacionesEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/dto/UsuarioRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/dto/UsuarioResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/entity/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/exception/ErrorDetalles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/exception/UsuarioException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/repository/UsuarioRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/com/usuarios/msusuarios/service/UsuarioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/db/migration/V1__crear_tabla_usuarios.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UsuariosMS/target/classes/db/migration/V2__insertar_usuarios_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/estadisticasms.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../estadisticasms/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/horariosms/src/main/resources/db_migration/V1__crear_tabla_horarios.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/horariosms/src/main/resources/db_migration/V2__insertar_horarios_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/horariosms/src/test/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/horariosms/target/classes/db_migration/V1__crear_tabla_horarios.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../horariosms/horariosms/target/classes/db_migration/V2__insertar_horarios_iniciales.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/InventariomsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/config/WebClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/controller/ImplementoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/dto/ImplementoRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/dto/ImplementoResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/dto/MetricaEspejoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/exception/ImplementoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/model/Implemento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/repository/ImplementoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/java/com/canchas/inventarioms/service/ImplementoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/resources/bd_migration/V1__crear_tabla_inventario.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/main/resources/bd_migration/V2__insert_inventario.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/src/test/java/com/canchas/inventarioms/InventariomsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/bd_migration/V1__crear_tabla_inventario.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/bd_migration/V2__insert_inventario.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/InventariomsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/config/WebClientConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/controller/ImplementoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/dto/ImplementoRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/dto/ImplementoResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/dto/MetricaEspejoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/exception/ImplementoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/model/Implemento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/repository/ImplementoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../inventarioms/target/classes/com/canchas/inventarioms/service/ImplementoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/ListanegramsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/controller/ClienteBloqueadoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/dto/ClienteBloqueadoRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/dto/ClienteBloqueadoResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/exception/ListaNegraException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/model/ClienteBloqueado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/repository/ClienteBloqueadoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canchas/listanegrams/service/ClienteBloqueadoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.migration/V1__crear_tabla_lista_negra.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.migration/V2__insert_lista_negra.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/canchas/listanegrams/ListanegramsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegra/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegra/exception/ListaNegraException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegrams/ListanegramsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegrams/controller/ClienteBloqueadoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegrams/dto/ClienteBloqueadoRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegrams/dto/ClienteBloqueadoResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegrams/model/ClienteBloqueado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegrams/repository/ClienteBloqueadoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canchas/listanegrams/service/ClienteBloqueadoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.migration/V1__crear_tabla_lista_negra.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.migration/V2__insert_lista_negra.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/NotificacionesmsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/controller/NotificacionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/dto/NotificacionRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/dto/NotificacionResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/exception/NotificacionesException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/model/Notificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/repository/NotificacionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/java/com/canchas/notificacionesms/service/NotificacionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/resources/db/migration/V1__crear_tablas_notificaciones.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/main/resources/db/migration/V2__insert_tablas_notificaciones.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/src/test/java/com/canchas/notificacionesms/NotificacionesmsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/NotificacionesmsApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/controller/NotificacionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/dto/NotificacionRequestDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/dto/NotificacionResponseDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/exception/NotificacionesException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/model/Notificacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/repository/NotificacionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/com/canchas/notificacionesms/service/NotificacionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/db/migration/V1__crear_tablas_notificaciones.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../notificacionesms/target/classes/db/migration/V2__insert_tablas_notificaciones.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3E8FyUqwQynk0ZoomYOUNAsBOuF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.ListanegramsApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/Pictures/MAIN/listanegrams"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cfb75dc-f1d3-448c-a917-e309e4c79ff1" name="Changes" comment="" />
+      <created>1779552544510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779552544510</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
