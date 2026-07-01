@@ -24,9 +24,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3EKwSIh6yFTD6th3p0yKJc8iCnT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,8 +40,10 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "Spring Boot.HorariosmsApplication.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/User/Pictures/horariosms",
+    "last_opened_file_path": "C:/Users/User/Pictures/MAIN/horariosms",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15234375",
     "project.structure.side.proportion": "0.2"
